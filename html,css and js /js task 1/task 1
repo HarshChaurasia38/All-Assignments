@@ -1,0 +1,40 @@
+program:-                              output:-
+               
+                                               
+     var a='xyz';                              rty asd
+     var b=14;                                 rty 14
+                                               
+     function fn(){
+     a="rty";
+     var b="asd";
+     console.log(a,b);
+     }
+   
+     fn();
+     console.log(a,b);
+
+
+Program:-                                     output:-
+      
+     var x=5;                                  20
+     let y='abc';                              jkl
+                                               5  
+     function outerfn?(){                      jkl
+      let x=10;
+      y='xyz';
+    
+     function innerfn(){
+     x=20;
+     y='jkl';
+     }
+     
+    innerfn();
+    console.log(x);
+    console.log(y);
+    }
+   
+   outerfn();
+   console.log(x);
+   console.log(y);
+
+    

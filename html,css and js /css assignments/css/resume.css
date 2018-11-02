@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    height:100%;
+}
+#header{
+    background-image: url("/home/training4/Documents/practice/practice 2/images/header.jpeg");
+    height:120px;
+    width:100%;
+
+}
+.name{
+   font-family: 'Courier New', Courier, monospace;
+   color:black;
+   padding:35px 10px 0px 30px;
+}
+.post{
+   font-family: Arial, Helvetica, sans-serif;
+   color:green;
+   font-size: 20px;
+   padding:0px 10px 0px 38px;
+}
+section{
+  background-color:#82a43a;
+  color:white;
+  height:100vh;
+  float:left;
+  width:25%;
+}
+aside{
+ background-color:white;
+ height:100vh;
+ float:right;
+ width:75%;
+}
+h3{
+    padding:15px 0px 10px 15px;
+    color:darkviolet;
+}
+h4{
+    padding:7px 0px 10px 20px;
+    color:darkgreen;
+}
+li{
+    padding:0px 25px;
+    line-height: 25px;
+}
+h2{
+      color:darkviolet;
+}
+.profile_details{
+    float:right;
+    width:87%;
+}
+.div_first {
+    padding:10px 0px 10px 10px;
+}
+.div_second{
+    padding:5px 0px 0px 10px;
+}
+.left{
+    float:left;
+    width:50%;
+}
+.right{
+    float:right;
+    width:50%;   
+}
+p{
+   line-height: 23px; 
+   padding-left:30px;
+}
+.bottom{
+    float:left;
+    width:50%;
+    margin-top:20px;
+}
+.aside-foo{
+    height:93%;
+    weight:100%;
+}
+footer{
+    background-color:darkcyan;
+    height:50px;
+    width:100%;
+    display:inline-block;
+}

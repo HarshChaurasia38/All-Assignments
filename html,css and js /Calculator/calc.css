@@ -1,0 +1,30 @@
+
+body{
+    background-color: grey;
+}
+section{ 
+  background-color: bisque;
+  text-align: center;
+  border:2px solid black;
+  height:500px;
+  width:800px;
+  margin:0 auto;
+  margin-top:100px;
+}
+button{
+    background-color:burlywood; 
+    border:2px solid white;
+    line-height: 20px;
+    width: 80px;
+    height: 40px;
+}
+p{
+    margin:0 auto;
+    border:2px solid black;
+    height:65px;
+    width:41%;
+}
+#clearscreen{
+    margin-top:40px;
+    margin-left:250px;
+}

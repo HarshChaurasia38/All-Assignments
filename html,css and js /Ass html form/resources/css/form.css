@@ -1,0 +1,58 @@
+
+body{
+    margin:0;
+    padding:0;
+    background:url('/home/training4/Documents/practice/Ass html form/resources/images/pexels-photo-531880.jpeg');
+    background-repeat: no-repeat ;
+    background-position: center;
+    height:100vh;
+    
+}
+.main-heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkkhaki;
+}
+section{
+    margin: 0 auto;
+    margin-top:4%;
+    text-align:center;
+    height:450px;
+    width:300px;
+    border: 2px solid white;
+    background-color:#911f54;   
+    background-size: contain;
+
+}
+form{
+    line-height: 50px;
+}
+button{
+    color:darkblue;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login{
+    display: inline;
+}

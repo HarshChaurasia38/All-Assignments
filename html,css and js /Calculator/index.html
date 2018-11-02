@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link href="calc.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+           <section>
+
+            <h1 align="center" style="margin:40px;">CALCULATOR</h1>
+
+            <p id="show"></p>
+
+            <button id="clearscreen" type="reset" onclick="reset()">C</button>
+            <br>
+
+            <button  type="button" onclick="myfunction(7)">7</button>
+            <button  type="button" onclick="myfunction(8)">8</button>
+            <button  type="button" onclick="myfunction(9)">9</button>
+            <button  type="button" value="/" onclick="myfunction(this.value)">/</button>
+            <br>
+            
+            <button  type="button" onclick="myfunction(4)">4</button>
+            <button  type="button" onclick="myfunction(5)">5</button>
+            <button  type="button" onclick="myfunction(6)">6</button>
+            <button  type="button" value="*" onclick="myfunction(this.value)">*</button>
+            <br>
+
+            <button  type="button" onclick="myfunction(1)">1</button>
+            <button  type="button" onclick="myfunction(2)">2</button>
+            <button  type="button" onclick="myfunction(3)">3</button>
+            <button  type="button" value="-" onclick="myfunction(this.value)">-</button>
+            <br>
+            
+            <button  type="button" value="." onclick="myfunction(this.value)">.</button>
+            <button  type="button" onclick="myfunction(0)">0</button>
+            <button  id="equalto" type="button" value="=" onclick="calculate()">=</button>
+            <button  type="button" value="+" onclick="myfunction(this.value)">+</button>
+            <br>
+           </section>
+            
+           
+            
+           
+        
+
+
+
+
+        <script src="calc.js"></script>
+    </body>
+</html>
