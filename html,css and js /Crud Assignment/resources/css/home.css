@@ -61,3 +61,12 @@ button{
     margin:0 auto;
     top:60px;
 }
+#prev {
+    margin-left:50px;
+    margin-bottom:10px;
+}
+#next{
+    margin-top:10px;
+    margin-bottom:10px;
+    float: right;
+}

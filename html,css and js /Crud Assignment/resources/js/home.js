@@ -25,8 +25,6 @@
 // };
 
 
-
-
 //get json user details
 
  $(document).ready(function() {
@@ -41,9 +39,15 @@
 
 
            $.each(data1.data,function(index,value){
+
+            if(index==10){
+              return false;
+            }
+
                 // console.log(value);
 
           $('#table-data1').append('<tr>');
+          $('#table-data1').append('<td style="padding-left:83px;">' + data1.data[index].id +'</td>');
           $('#table-data1').append('<td style="padding-left:83px;">' + data1.data[index].firstName +'</td>');
           $('#table-data1').append('<td style="padding-left:100px;">' + data1.data[index].lastName  + '</td>');
           $('#table-data1').append('<td style="padding-left:130px; padding-right:40px;">' + data1.data[index].email + '</td>');
@@ -51,15 +55,92 @@
           $('#table-data1').append('<td><button style="margin-right:120px; margin-bottom:6px;" onclick="foo('+data1.data[index].id+')" data-toggle="modal" data-target="#edit-modal" class="btn btn-primary" type="button">Edit</button></td>');
           $('#table-data1').append('<td><button style:"margin-bottom:6px;"onclick="del('+data1.data[index].id+')" class="btn btn-outline-warning" type="button">Delete</button></td>');
           $('#table-data1').append('</tr><br>');
-
-
           
            });
-           
+           console.log(data1.data.length);
        });
             
     });
  });
+
+
+//Previous and Next button code
+
+var maxRecords=0;
+
+ $(document).ready(function(){
+
+  $("#next").on('click',function(event){
+    
+     $.getJSON('http://assignmentapi.aspcore.net/api/users',function(data1) {
+
+        //  console.log(data1);
+
+        $('#table-data1').empty();
+        
+              maxRecords=maxRecords+10;
+
+
+         for(let index=maxRecords;index<maxRecords+10;index++)
+          {
+
+        $('#table-data1').append('<tr>');
+        $('#table-data1').append('<td style="padding-left:83px;">' + data1.data[index].id +'</td>');
+        $('#table-data1').append('<td style="padding-left:83px;">' + data1.data[index].firstName +'</td>');
+        $('#table-data1').append('<td style="padding-left:100px;">' + data1.data[index].lastName  + '</td>');
+        $('#table-data1').append('<td style="padding-left:130px; padding-right:40px;">' + data1.data[index].email + '</td>');
+        $('#table-data1').append('<td style="padding-right:67px;">' + data1.data[index].phone  + '</td>');
+        $('#table-data1').append('<td><button style="margin-right:120px; margin-bottom:6px;" onclick="foo('+data1.data[index].id+')" data-toggle="modal" data-target="#edit-modal" class="btn btn-primary" type="button">Edit</button></td>');
+        $('#table-data1').append('<td><button style:"margin-bottom:6px;"onclick="del('+data1.data[index].id+')" class="btn btn-outline-warning" type="button">Delete</button></td>');
+        $('#table-data1').append('</tr><br>');
+        
+         };
+           
+         console.log(data1.data.length);
+     });
+          
+  });
+});
+
+
+$(document).ready(function(){
+
+  $("#prev").on('click',function(event){
+    
+     $.getJSON('http://assignmentapi.aspcore.net/api/users',function(data1) {
+
+        //  console.log(data1);
+
+        $('#table-data1').empty();
+        
+              maxRecords=maxRecords-10;
+
+         for(let index=maxRecords;index<maxRecords+10;index++)
+          {
+        $('#table-data1').append('<tr>');
+        $('#table-data1').append('<td style="padding-left:83px;">' + data1.data[index].id +'</td>');
+        $('#table-data1').append('<td style="padding-left:83px;">' + data1.data[index].firstName +'</td>');
+        $('#table-data1').append('<td style="padding-left:100px;">' + data1.data[index].lastName  + '</td>');
+        $('#table-data1').append('<td style="padding-left:130px; padding-right:40px;">' + data1.data[index].email + '</td>');
+        $('#table-data1').append('<td style="padding-right:67px;">' + data1.data[index].phone  + '</td>');
+        $('#table-data1').append('<td><button style="margin-right:120px; margin-bottom:6px;" onclick="foo('+data1.data[index].id+')" data-toggle="modal" data-target="#edit-modal" class="btn btn-primary" type="button">Edit</button></td>');
+        $('#table-data1').append('<td><button style:"margin-bottom:6px;"onclick="del('+data1.data[index].id+')" class="btn btn-outline-warning" type="button">Delete</button></td>');
+        $('#table-data1').append('</tr><br>');
+        
+         };
+           
+         console.log(data1.data.length);
+     });
+          
+  });
+});
+
+
+
+
+
+
+
 
 
 
@@ -176,7 +257,11 @@ function del(del)
 
 
 
+//  function remove(){
 
+//   $('#table-data1').remove();
+//   }
+ 
 
   // console.log(del)
 
