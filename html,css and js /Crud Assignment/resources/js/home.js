@@ -1,29 +1,4 @@
 
-// $(document).ready(function() {
-//     $("#get-data").click(function(event){
-//        $('#table-data').load('http://assignmentapi.aspcore.net/api/users');
-//     });
-//  });
-
-
-// page auto reload after 10 seconds
-
-// setTimeout(function(){
-//   window.location.reload(1);
-// }, 10000);
-
-
-
-// //button auto click after 6 second
-// window.onload = function(){
-
-//   var button = document.getElementById('get-data');
-
-//   setInterval(function(){
-//       button.click();
-//   },6000);             // this will make it click again every 6000 miliseconds
-// };
-
 
 //get json user details
 
@@ -254,6 +229,43 @@ function del(del)
 });
 
 };
+
+
+
+
+
+//References
+
+
+
+
+
+
+// $(document).ready(function() {
+//     $("#get-data").click(function(event){
+//        $('#table-data').load('http://assignmentapi.aspcore.net/api/users');
+//     });
+//  });
+
+
+// page auto reload after 10 seconds
+
+// setTimeout(function(){
+//   window.location.reload(1);
+// }, 10000);
+
+
+
+// //button auto click after 6 second
+// window.onload = function(){
+
+//   var button = document.getElementById('get-data');
+
+//   setInterval(function(){
+//       button.click();
+//   },6000);             // this will make it click again every 6000 miliseconds
+// };
+
 
 
 
